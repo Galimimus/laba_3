@@ -1,0 +1,28 @@
+.split {
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-left: 20px;
+   }
+
+   .left {
+   left: 0;
+   }
+
+   .right {
+   right: 0;
+   background-color: #ccc;
+   }
+
+   .message {
+    background-color: rgb(228, 227, 227);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    float: left;
+    }

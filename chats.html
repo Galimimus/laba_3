@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chats</title>
+    <link rel="stylesheet" href="chats.css">
+    <script src="chats.js" defer></script>
+</head>
+
+<body>
+    <div id="left" class="split left">
+        <h1 id="hello"></h1>
+        <h2 id="hello2"></h2>
+        <a href="logout.php" onclick="localStorage.clear();">Logout</a>
+    <div id="chats">
+        <h1>Chats</h1>
+    </div>
+        <div id="create-chat">
+            <h2>Create new chat</h2>
+            <input type="text" id="chat-name" placeholder="chat name"><br/>
+            <input type="radio" id="chat-access"  name="access" value="public">
+            <label for="public">Public chat</label>
+            <input type="radio" id="chat-access"  name="access" value="private">
+            <label for="private">Private chat</label><br/>
+            <input type="button" id="create-chat-button" value="Create">
+        </div>
+    </div>
+    <div id="right" class="split right">
+        <h1 id="chatName"></h1>
+            <div id="messages">
+            </div>
+            <div class="message" style="display: none;" id="add-message">
+                <input type="text" id="message" placeholder="message">
+                <input type="button" id="send-message" value="Send">
+            </div>
+            <div class="message" id="add-user" style="display: none;">
+                <input type="text" id="user" placeholder="user ID">
+                <input type="button" id="add-user-button" value="Add">
+            </div>
+    </div>
+</body>
